@@ -1,0 +1,168 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Variables */
+html {
+  min-width: 300px;
+}
+
+body {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: whitesmoke;
+}
+
+.section-area {
+  padding: 20px 4.5vw;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+.gallery .card {
+  background-color: #e9c46a;
+  border-radius: 2px;
+  padding-inline: 15px;
+}
+
+hr {
+  background-color: gray;
+  height: 1px;
+  border: none;
+}
+
+iframe {
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #264653;
+  padding: 6px 1rem;
+}
+.nav #left {
+  flex-basis: 3.5rem;
+}
+.nav #left a img {
+  width: 100%;
+}
+.nav #center {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.nav #center .items-navbar {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-left: 0;
+}
+.nav #center .items-navbar .item-navbar a {
+  color: lightgrey;
+  text-decoration: none;
+}
+.nav #center .items-navbar .item-navbar:hover a {
+  color: #e76f51;
+}
+.nav #right {
+  flex-grow: 1;
+}
+.nav #right #menu-icon {
+  color: white;
+  font-size: 1.4rem;
+  float: right;
+}
+
+#section1 {
+  background-image: url("../assets/img/white-tech-design.png");
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#section1 > div:nth-child(1) {
+  flex-grow: 2;
+}
+
+#section1 > div:nth-child(2) {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header-with-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.header-with-features .features {
+  gap: 0.5rem;
+}
+.header-with-features .features .feature {
+  font-size: 1rem;
+  font-weight: normal;
+  background-color: #e76f51;
+  padding: 4px 1rem;
+  border-radius: 20px;
+  color: white;
+  white-space: nowrap;
+}
+.header-with-features .features .feature:hover {
+  background-color: #2a9d8f;
+}
+
+.footer {
+  background-color: #2a9d8f;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: white;
+}
+.footer p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: grid;
+    grid-template-areas: "a b" "c c";
+    grid-gap: 0;
+  }
+  .nav #left {
+    width: 3.5rem;
+    grid-area: a;
+  }
+  .nav #right {
+    grid-area: b;
+  }
+  .nav #center {
+    display: none;
+    grid-area: c;
+    text-align: center;
+  }
+  .nav #center .items-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .nav #right {
+    display: none;
+  }
+
+  .nav #center {
+    display: block !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
