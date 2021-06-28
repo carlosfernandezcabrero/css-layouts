@@ -1,0 +1,38 @@
+.container-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.row-medium {
+    width: 90%;
+}
+
+.row__title {
+    margin-bottom: 30px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    padding-inline: 4%;
+    border-radius: 2px;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: center;
+}
