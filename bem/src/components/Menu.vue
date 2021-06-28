@@ -9,10 +9,12 @@
         <li class="menu__link"><a href="#" class="menu__a">Link 1</a></li>
         <li class="menu__link"><a href="#" class="menu__a">Link 2</a></li>
       </ul>
-      <div class="actions">
-        <button v-if="!displayMenu" class="button button-menu" role="button" v-on:click="changeStatusMenu">Show Menu
+      <div class="menu__actions">
+        <button v-if="!displayMenu" class="button button-menu button-right" role="button" v-on:click="changeStatusMenu">
+          Show Menu
         </button>
-        <button v-if="displayMenu" class="button button-menu" role="button" v-on:click="changeStatusMenu">Hide Menu
+        <button v-if="displayMenu" class="button button-menu button-right" role="button" v-on:click="changeStatusMenu">
+          Hide Menu
         </button>
       </div>
     </div>
@@ -78,7 +80,6 @@ export default {
 .button {
   background-color: #2a9d8f;
   color: white;
-  float: right;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-inline: 25%;
@@ -90,8 +91,8 @@ export default {
   cursor: pointer;
 }
 
-.button-menu {
-  flex-grow: 1;
+.button-right {
+  float: right;
 }
 
 @media only screen and (min-width: 769px) {
