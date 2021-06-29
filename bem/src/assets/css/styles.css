@@ -14,7 +14,8 @@
 }
 
 .row-medium {
-    width: 90%;
+    width: 100%;
+    padding-inline: 4%;
 }
 
 .row__title {

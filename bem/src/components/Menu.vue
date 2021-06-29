@@ -1,21 +1,23 @@
 <template>
   <div class="container container-flex">
-    <div class="menu">
-      <a href="#" class="menu__brand">
-        <img src="../assets/img/mi-logo.png" alt="logo" class="menu__img">
-      </a>
-      <ul v-if="displayMenu" class="menu__elements__left">
-        <li class="menu__link"><a href="#" class="menu__a">Home</a></li>
-        <li class="menu__link"><a href="#" class="menu__a">Link 1</a></li>
-        <li class="menu__link"><a href="#" class="menu__a">Link 2</a></li>
-      </ul>
-      <div class="menu__actions">
-        <button v-if="!displayMenu" class="button button-menu button-right" role="button" v-on:click="changeStatusMenu">
-          Show Menu
-        </button>
-        <button v-if="displayMenu" class="button button-menu button-right" role="button" v-on:click="changeStatusMenu">
-          Hide Menu
-        </button>
+    <div class="row row-medium">
+      <div class="menu">
+        <a href="#" class="menu__brand">
+          <img src="../assets/img/mi-logo.png" alt="logo" class="menu__img">
+        </a>
+        <ul v-if="displayMenu" class="menu__elements__left">
+          <li class="menu__link"><a href="#" class="menu__a">Home</a></li>
+          <li class="menu__link"><a href="#" class="menu__a">Link 1</a></li>
+          <li class="menu__link"><a href="#" class="menu__a">Link 2</a></li>
+        </ul>
+        <div class="menu__actions">
+          <button v-if="!displayMenu" class="button button-menu button-right" role="button" v-on:click="changeStatusMenu">
+            Show Menu
+          </button>
+          <button v-if="displayMenu" class="button button-menu button-right" role="button" v-on:click="changeStatusMenu">
+            Hide Menu
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -42,7 +44,6 @@ export default {
 
 .menu {
   border-bottom: gray solid 1px;
-  width: 90%;
   display: flex;
   align-items: center;
 }
