@@ -33,7 +33,9 @@
             <h3 class="card__title">Modifiers</h3>
             <pre class="card__text">
             <code class="card__code">
-&lt;div class="row row-medium row-flex">
+&lt;div class="row |
+            row-medium |
+            row-flex">
     &lt;div class="card">
         &lt;h3 class="card__title">
             Elements
