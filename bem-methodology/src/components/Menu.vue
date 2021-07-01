@@ -6,15 +6,14 @@
           <img src="../assets/img/mi-logo.png" alt="logo" class="menu__img">
         </a>
         <ul v-if="displayMenu" class="menu__elements__left">
-          <li class="menu__link"><a href="#" class="menu__a">Home</a></li>
           <li class="menu__link"><a href="#" class="menu__a">Link 1</a></li>
           <li class="menu__link"><a href="#" class="menu__a">Link 2</a></li>
         </ul>
         <div class="menu__actions">
-          <button v-if="!displayMenu" class="button button-menu button-right" role="button" v-on:click="changeStatusMenu">
+          <button v-if="!displayMenu" class="button button-menu" role="button" v-on:click="changeStatusMenu">
             Show Menu
           </button>
-          <button v-if="displayMenu" class="button button-menu button-right" role="button" v-on:click="changeStatusMenu">
+          <button v-if="displayMenu" class="button button-menu" role="button" v-on:click="changeStatusMenu">
             Hide Menu
           </button>
         </div>
@@ -46,21 +45,23 @@ export default {
   border-bottom: gray solid 1px;
   display: flex;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .menu__brand {
-  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .menu__img {
-  width: 5rem;
+  width: min(100%, 5rem);
 }
 
 .menu__elements__left {
   display: flex;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 1rem;
   flex-grow: 1;
-  margin-left: 4rem;
 }
 
 .menu__link {
@@ -92,8 +93,9 @@ export default {
   cursor: pointer;
 }
 
-.button-right {
-  float: right;
+.menu__actions {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 769px) {
@@ -105,14 +107,13 @@ export default {
 @media only screen and (max-width: 768px) {
   .menu {
     display: grid;
-    grid-template-areas: "a b" "c c";
-    grid-gap: 0;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+    grid-row-gap: 1rem;
   }
 
   .menu__elements__left {
     display: block;
-    margin-left: 0;
-    grid-area: c;
+    order: 3;
   }
 
   .menu__link:hover a {
@@ -120,10 +121,6 @@ export default {
     border-bottom: #2a9d8f solid 2px;
     padding-inline: 2%;
     font-weight: normal;
-  }
-
-  .menu__link:nth-child(1) {
-    margin-bottom: 20px;
   }
 
   .menu__link {
