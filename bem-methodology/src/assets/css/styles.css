@@ -24,7 +24,7 @@
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 23rem), 1fr));
     gap: 1rem;
 }
 
@@ -36,4 +36,7 @@
 .card-flex {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    column-gap: 3rem;
 }

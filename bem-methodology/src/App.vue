@@ -107,15 +107,19 @@ body {
 }
 
 .card__image__container {
-  width: 20%;
+  width: min(100%, 10rem);
 }
 
 .card__text {
-  width: 80%;
+  flex-grow: 1;
 }
 
 .card__image {
   width: 100%;
+}
+
+.card__links {
+  padding-left: 0;
 }
 
 .card__link {
