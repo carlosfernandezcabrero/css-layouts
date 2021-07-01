@@ -85,7 +85,7 @@ iframe {
 }
 
 #section1 {
-  background-image: url("../assets/img/white-tech-design.png");
+  background-image: url("./assets/img/white-tech-design.png");
   display: flex;
   flex-wrap: wrap;
 }
