@@ -3,6 +3,14 @@
   <div class="main" role="main">
     <div class="container container-flex">
       <div class="row row-medium">
+        <h3 class="row__title">Description</h3>
+        <p class="row__text">BEM (Block, Element, Modifier) is a component-based approach to web development. The idea behind it is to
+          divide the user interface into independent blocks. This makes interface development easy and fast even with a
+          complex UI, and it allows reuse of existing code without copying and pasting.</p>
+      </div>
+    </div>
+    <div class="container container-flex">
+      <div class="row row-medium">
         <h3 class="row__title">BEM elements</h3>
         <div class="cards cards-grid">
           <div class="card card-gray">

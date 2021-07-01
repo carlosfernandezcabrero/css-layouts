@@ -119,7 +119,7 @@ export default {
   .menu__link:hover a {
     color: #2c3e50;
     border-bottom: #2a9d8f solid 2px;
-    padding-inline: 2%;
+    padding-inline: 1rem;
     font-weight: normal;
   }
 
