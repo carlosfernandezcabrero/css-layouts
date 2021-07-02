@@ -4,43 +4,44 @@
     <div class="container container--flex">
       <div class="row row--medium">
         <h3 class="row__title">Description</h3>
-        <p class="row__text">BEM (Block, Element, Modifier) is a component-based approach to web development. The idea behind it is to
+        <p class="row__text">BEM (Block, Element, Modifier) is a component-based approach to web development. The idea
+          behind it is to
           divide the user interface into independent blocks. This makes interface development easy and fast even with a
           complex UI, and it allows reuse of existing code without copying and pasting.</p>
       </div>
     </div>
     <div class="container container--flex">
       <div class="row row--medium">
-        <h3 class="row__title">BEM elements</h3>
+        <h3 class="row__title">Simple BEM elements</h3>
         <div class="cards cards--grid">
           <div class="card card--gray">
             <h3 class="card__title">Blocks</h3>
             <pre class="card__text">
-            <code class="card__code">
+              <code class="card__code">
 &lt;div class="card">
 
     ...
 
 &lt;/div>
-            </code>
-          </pre>
+              </code>
+            </pre>
           </div>
           <div class="card card--gray">
             <h3 class="card__title">Elements</h3>
             <pre class="card__text">
-            <code class="card__code">
+              <code class="card__code">
 &lt;div class="card">
     &lt;h3 class="card__title">
         Elements
     &lt;/h3>
 &lt;/div>
-            </code>
-          </pre>
+              </code>
+            </pre>
           </div>
           <div class="card card--gray">
             <h3 class="card__title">Modifiers</h3>
             <pre class="card__text">
-            <code class="card__code">
+              <code class="card__code">
 &lt;div class="row |
             row--medium |
             row--flex">
@@ -50,8 +51,55 @@
         &lt;/h3>
     &lt;/div>
 &lt;/div>
-            </code>
-          </pre>
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container container--flex">
+      <div class="row row--medium">
+        <h3 class="row__title">Composite BEM elements</h3>
+        <div class="cards cards--grid">
+          <div class="card card--gray">
+            <h3 class="card__title">Blocks</h3>
+            <pre class="card__text">
+              <code class="card__code">
+&lt;div class="my-card">
+
+    ...
+
+&lt;/div>
+              </code>
+            </pre>
+          </div>
+          <div class="card card--gray">
+            <h3 class="card__title">Elements</h3>
+            <pre class="card__text">
+              <code class="card__code">
+&lt;div class="my-card">
+    &lt;h3 class="my-card__my-title">
+        Elements
+    &lt;/h3>
+&lt;/div>
+              </code>
+            </pre>
+          </div>
+          <div class="card card--gray">
+            <h3 class="card__title">Modifiers</h3>
+            <pre class="card__text">
+              <code class="card__code">
+&lt;div class="my-row |
+            my-row--medium-custom |
+            my-row--flex-custom">
+    &lt;div class="my-card">
+        &lt;h3 class="my-card__my-title">
+            Elements
+        &lt;/h3>
+    &lt;/div>
+&lt;/div>
+              </code>
+            </pre>
           </div>
         </div>
       </div>
