@@ -1,19 +1,19 @@
 <template>
-  <div class="container container-flex">
-    <div class="row row-medium">
+  <div class="container container--flex">
+    <div class="row row--medium">
       <div class="menu">
         <a href="#" class="menu__brand">
           <img src="../assets/img/mi-logo.png" alt="logo" class="menu__img">
         </a>
-        <ul v-if="displayMenu" class="menu__elements__left">
+        <ul v-if="displayMenu" class="menu__elements--left">
           <li class="menu__link"><a href="#" class="menu__a">Link 1</a></li>
           <li class="menu__link"><a href="#" class="menu__a">Link 2</a></li>
         </ul>
         <div class="menu__actions">
-          <button v-if="!displayMenu" class="button button-menu" role="button" v-on:click="changeStatusMenu">
+          <button v-if="!displayMenu" class="button button--menu" role="button" v-on:click="changeStatusMenu">
             Show Menu
           </button>
-          <button v-if="displayMenu" class="button button-menu" role="button" v-on:click="changeStatusMenu">
+          <button v-if="displayMenu" class="button button--menu" role="button" v-on:click="changeStatusMenu">
             Hide Menu
           </button>
         </div>
@@ -57,7 +57,7 @@ export default {
   width: min(100%, 5rem);
 }
 
-.menu__elements__left {
+.menu__elements--left {
   display: flex;
   column-gap: 2rem;
   row-gap: 1rem;
@@ -96,10 +96,11 @@ export default {
 .menu__actions {
   display: flex;
   justify-content: center;
+  flex-grow: 1;
 }
 
 @media only screen and (min-width: 769px) {
-  .button-menu {
+  .button--menu {
     display: none;
   }
 }
@@ -111,7 +112,7 @@ export default {
     grid-row-gap: 1rem;
   }
 
-  .menu__elements__left {
+  .menu__elements--left {
     display: block;
     order: 3;
   }
