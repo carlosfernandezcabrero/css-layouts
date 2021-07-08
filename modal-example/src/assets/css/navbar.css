@@ -1,0 +1,10 @@
+.navbar__logo {
+  width: 4rem;
+}
+
+.navbar--center {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=navbar.css.map */
